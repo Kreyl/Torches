@@ -1,0 +1,54 @@
+(export (version D)
+  (design
+    (source D:\Nute\Calmari\Torches\Torch4\Torch4_hw\XPL_PCB.sch)
+    (date "09/10/2014 14:12:06")
+    (tool "eeschema (2013-07-07 BZR 4022)-stable"))
+  (components
+    (comp (ref D1)
+      (value LED)
+      (libsource (lib Tittar_kl) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5436552E))
+    (comp (ref XL1)
+      (value CONN_1)
+      (libsource (lib Connectors_kl) (part CONN_1))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 54365F62))
+    (comp (ref XL2)
+      (value CONN_1)
+      (libsource (lib Connectors_kl) (part CONN_1))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 54365F71)))
+  (libparts
+    (libpart (lib Connectors_kl) (part CONN_1)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) XL)
+        (field (name Value) CONN_1)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib Tittar_kl) (part LED)
+      (footprints
+        (fp LED*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num A) (name A) (type passive))
+        (pin (num C) (name C) (type passive)))))
+  (libraries
+    (library (logical Connectors_kl)
+      (uri D:\libs\Kicad\Connectors_kl.lib))
+    (library (logical Tittar_kl)
+      (uri D:\libs\Kicad\Tittar_kl.lib)))
+  (nets
+    (net (code 1) (name "")
+      (node (ref D1) (pin A))
+      (node (ref XL1) (pin 1)))
+    (net (code 2) (name "")
+      (node (ref D1) (pin C))
+      (node (ref XL2) (pin 1)))))

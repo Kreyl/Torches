@@ -1,0 +1,24 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 09/10/2014 14:23:08
+
+BeginCmp
+TimeStamp = /5436552E;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED_XPLAWT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54365F62;
+Reference = XL1;
+ValeurCmp = CONN_1;
+IdModule  = CONN1_SQUARE_2MM_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = /54365F71;
+Reference = XL2;
+ValeurCmp = CONN_1;
+IdModule  = CONN1_ROUND_2MM_SMD;
+EndCmp
+
+EndListe

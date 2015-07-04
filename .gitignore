@@ -1,0 +1,11 @@
+*.d
+*.mk
+*.o
+*.dsn
+Torch4/Torch4_fw/.settings/language.settings.xml
+*.map
+*.elf
+*.bak
+*.kicad_pcb-bak
+*.ses
+Torch1/torch_hw/torch.pdf
